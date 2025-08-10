@@ -20,13 +20,10 @@ function includesElement(array, element) {
   let result;
   for(let i = 0; i<array.length; i++){
     if(array[i] === element){
-      result = true;
-    }
-    else{
-      result = false;
+      return true;
     }
   }
-  return result;
+  return false;
 }
 
 console.log(includesElement([1, 2, 3], 2));
